@@ -1,0 +1,39 @@
+#chat-window {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  
+  .chat-message {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  .chat-message.user {
+    align-items: flex-end;
+  }
+  
+  .chat-message.bot {
+    align-items: flex-start;
+  }
+  
+  .chat-message span {
+    padding: 8px 12px;
+    border-radius: 5px;
+    max-width: 70%;
+    word-wrap: break-word;
+  }
+  
+  .chat-message.user span {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .chat-message.bot span {
+    background-color: #e6e6e6;
+    color: black;
+  }
+  
